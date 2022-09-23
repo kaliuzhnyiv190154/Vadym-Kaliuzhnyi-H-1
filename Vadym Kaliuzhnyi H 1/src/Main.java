@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class Main implements PrimeSieve{
 
-    int max;
+    int limit;
     ArrayList<Integer> primes = new ArrayList<>();
 
-    public Main(int max) {
-        this.max = max;
+    public Main(int limit) {
+        this.limit = limit;
     }
 
 
@@ -17,7 +17,7 @@ public class Main implements PrimeSieve{
     }
 
     public void addPrimes(){
-        for (int i = 0; i < max; i++) {
+        for (int i = 0; i < limit; i++) {
             if (isPrime(i) == true){
                 primes.add(i);
             }
